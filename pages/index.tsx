@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useState } from 'react'
 
 //Components
-import { GradientBackgroundCon, BackgroundImage1, BackgroundImage2, FooterCon, FooterLink } from '@/components/QuoteGenerator/QuoteGeneratorElements'
+import { GradientBackgroundCon, BackgroundImage1, BackgroundImage2, FooterCon, FooterLink, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorTitle, QuoteGeneratorSubTitle, GenerateQuoteButton, GenerateQuoteButtonText } from '@/components/QuoteGenerator/QuoteGeneratorElements'
 
 // Assets
 import Clouds1 from '@/assets/cloud-and-thunder.png'
@@ -23,30 +23,53 @@ export default function Home() {
       {/* Background */}
       <GradientBackgroundCon>
 
-      
+        {/* Quote Generator Modal Pop-up */}
+        {/* <QuoteGeneratorModal/> */}
 
+        {/* Quote Generator */}
+        <QuoteGeneratorCon>
+          <QuoteGeneratorInnerCon>
 
-      {/* Background Images */}
-      <BackgroundImage1
-        src = {Clouds1}
-        height = "300"
-        alt = "cloudybackground1"
-      />
-      <BackgroundImage2
-        src = {Clouds2}
-        height = "300"
-        alt = "cloudybackground2"
-      />
+            <QuoteGeneratorTitle>
+              Inspirational Quote Generator
+            </QuoteGeneratorTitle>
 
-      {/* Footer */}
-      <FooterCon>
-        <>
-          Quotes Generated: {numberOfQuotes}
-          <br/>
-          Developed by <FooterLink href = "https://eugenetye.com/" 
-          target="_blank" rel="noopener and noreferrer"> Eugene Tye</FooterLink>
-        </>
-      </FooterCon>
+            <QuoteGeneratorSubTitle>
+            Looking for a splash of inspiration? Generate a quote card with a random inspirational quote provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes API</FooterLink>.
+            </QuoteGeneratorSubTitle>
+
+            <GenerateQuoteButton>
+              <GenerateQuoteButtonText onClick={null}>
+                Make a Quote
+              </GenerateQuoteButtonText>
+            </GenerateQuoteButton>
+
+          </QuoteGeneratorInnerCon>
+        </QuoteGeneratorCon>
+
+        
+
+        {/* Background Images */}
+        <BackgroundImage1
+          src = {Clouds1}
+          height = "300"
+          alt = "cloudybackground1"
+        />
+        <BackgroundImage2
+          src = {Clouds2}
+          height = "300"
+          alt = "cloudybackground2"
+        />
+
+        {/* Footer */}
+        <FooterCon>
+          <>
+            Quotes Generated: {numberOfQuotes}
+            <br/>
+            Developed by <FooterLink href = "https://eugenetye.com/" 
+            target="_blank" rel="noopener and noreferrer"> Eugene Tye</FooterLink>
+          </>
+        </FooterCon>
 
       </GradientBackgroundCon>
     </>
