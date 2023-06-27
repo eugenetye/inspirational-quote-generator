@@ -2,24 +2,24 @@ import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 
 interface ImageBlobProps {
-  quoteReceived: String;
+  quoteReceived: String | null;
   blobUrl: string | null;
 }
 
 const ImageBlob = ({
   quoteReceived, 
-  // blobUrl
+  blobUrl
 }: ImageBlobProps) => {
-  const [blobUrl, setBlobUrl] = useState<string | null>(null); 
+  // const [blobUrl, setBlobUrl] = useState<string | null>(null); 
 
-  useEffect(() => {
-    const response = {
+  // useEffect(() => {
+    /* const response = {
       "statusCode": 200,
       "headers": {
         "Content-Type": "image/png",
         "Access-Control-Allow-Origin": "*",
       },
-      "body": blob,
+      
       "isBase64Encoded": true
     }
     const binaryData: any = Buffer.from(response.body, 'base64');
@@ -29,7 +29,7 @@ const ImageBlob = ({
     return () => {
         URL.revokeObjectURL(newBlobUrl);
     }
-  }, []);
+  }, []); */
 
   if (!blobUrl) {
     return null;
@@ -41,4 +41,3 @@ const ImageBlob = ({
 }
 
 export default ImageBlob
-

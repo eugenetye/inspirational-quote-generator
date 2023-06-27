@@ -8,7 +8,7 @@ type Query {
   @auth(rules: [
     { allow: public, provider: iam },
   ])
-  @function(name: "inspoquoteLambda-${env}")
+  @function(name: "inspoQuoteLambda-${env}")
 }
 
 # Public Data

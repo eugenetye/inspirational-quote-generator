@@ -52,6 +52,15 @@
   "function": {
     "inspoQuoteLambda": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput"
+          ],
+          "category": "api",
+          "resourceName": "inspirationalquotes"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
