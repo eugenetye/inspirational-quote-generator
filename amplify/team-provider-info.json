@@ -1,15 +1,24 @@
 {
   "dev": {
+    "awscloudformation": {},
+    "categories": {
+      "function": {
+        "inspoQuoteLambda": {},
+        "inspirationalquotes": {}
+      }
+    }
+  },
+  "newdev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-inspirationalquotes-dev-133230-authRole",
-      "UnauthRoleArn": "arn:aws:iam::765038588867:role/amplify-inspirationalquotes-dev-133230-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::765038588867:role/amplify-inspirationalquotes-dev-133230-authRole",
+      "AuthRoleName": "amplify-inspirationalquotes-newdev-171923-authRole",
+      "UnauthRoleArn": "arn:aws:iam::765038588867:role/amplify-inspirationalquotes-newdev-171923-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::765038588867:role/amplify-inspirationalquotes-newdev-171923-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-inspirationalquotes-dev-133230-deployment",
-      "UnauthRoleName": "amplify-inspirationalquotes-dev-133230-unauthRole",
-      "StackName": "amplify-inspirationalquotes-dev-133230",
-      "StackId": "arn:aws:cloudformation:us-east-2:765038588867:stack/amplify-inspirationalquotes-dev-133230/195d27a0-12b5-11ee-8680-0273a71a899f",
-      "AmplifyAppId": "d3slkxdmduwasl"
+      "DeploymentBucketName": "amplify-inspirationalquotes-newdev-171923-deployment",
+      "UnauthRoleName": "amplify-inspirationalquotes-newdev-171923-unauthRole",
+      "StackName": "amplify-inspirationalquotes-newdev-171923",
+      "StackId": "arn:aws:cloudformation:us-east-2:765038588867:stack/amplify-inspirationalquotes-newdev-171923/4a95d150-1530-11ee-9895-068ebc15befb",
+      "AmplifyAppId": "d3osa9cjuzi6uw"
     },
     "categories": {
       "auth": {
@@ -17,9 +26,10 @@
       },
       "function": {
         "inspoQuoteLambda": {
-          "deploymentBucketName": "amplify-inspirationalquotes-dev-133230-deployment",
-          "s3Key": "amplify-builds/inspoQuoteLambda-3350734c534e356d544e-build.zip"
-        }
+          "deploymentBucketName": "amplify-inspirationalquotes-newdev-171923-deployment",
+          "s3Key": "amplify-builds/inspoQuoteLambda-485063746a75554a3277-build.zip"
+        },
+        "inspirationalquotes": {}
       },
       "api": {
         "inspirationalquotes": {}
