@@ -4,7 +4,9 @@ This is a serverless, full-stack inspirational quote generator app built using N
 
 
 
-https://github.com/eugenetye/inspirational-quote-generator/assets/105037989/0af37a85-9b06-4b8d-badb-bc28280c561f
+
+https://github.com/eugenetye/inspirational-quote-generator/assets/105037989/017b8dfd-5c8b-4c3d-b54b-b7b985828961
+
 
 
 First, a random inspirational quote is fetched from Zenquotes API, and AWS generates a photo based on the quote in the cloud. Then, the quote photo will be available to be downloaded as a file.
